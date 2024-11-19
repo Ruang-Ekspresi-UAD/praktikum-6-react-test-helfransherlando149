@@ -50,8 +50,8 @@ test('Greeting component renders {nama dosen kalian}', () => {
 
 test('triggers alert with correct message when clicked', () => {
     window.alert = jest.fn(); 
-    render(<AlertButton message="Hello, Helfrans Herlando!" />);
+    render(<AlertButton message="Hi, Helfrans Herlando!" />);
     const button = screen.getByTestId('alert-button');
     fireEvent.click(button);
-    expect(window.alert).toHaveBeenCalledWith('Hello, Helfrans Herlando!');
+    expect(window.alert).toHaveBeenCalledWith('Hi, Helfrans Herlando!');
 });
